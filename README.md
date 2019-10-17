@@ -131,7 +131,7 @@ __Quais são:__
 
     A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px.
 
-    Vamos conferir o [exemplo](./exemplos/exemplo-medidas-viewport)
+    Vamos conferir o [exemplo](./exemplos/exemplo-medidas-viewport.html)
 
 * Outras unidades de medida
 
