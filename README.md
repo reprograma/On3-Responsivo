@@ -131,14 +131,14 @@ __Quais são:__
 
     A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px.
 
-    [![vw-vh](./imagens/vw-vh.jpg)](https://codepen.io/raissamartinsmenezes/pen/QWWKvrV)
+    Vamos conferir o [exemplo](./exemplos/exemplo-medidas-viewport)
 
-* vw
-* vmin 
-* vmax
+* Outras unidades de medida
 
-* ex 
-* ch
+    **vmax e vmin:** [UNIDADES CSS RELATIVAS: VW, VH, VMAX, VMIN (CSS3)](https://www.youtube.com/watch?v=g__c-7M9Xzk&t=94s)
+
+    **ex e ch:** [UNIDADES CSS RELATIVAS: %, REM, EM, CH, EX (CSS3)](https://www.youtube.com/watch?v=etM0JBeFbf8)
+
 
 ---
 
