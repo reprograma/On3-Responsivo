@@ -2,10 +2,15 @@
 
 Responsividade
 1 [Layout Responsivo](#layoutResponsivo)
+
 2 [Resolução de tela x Tamanho de tela](#resolucaoTamanho)
+
 3 [Unidades de medida responsivas](#unidadesMedida)
+
 4 [Breakpoints & Media Queries](#breakpointsMedia)
+
 5 [Tipos de displays](#displays)
+
 6 [Mobile First](#mobileFirst)
 
 --- 
@@ -52,6 +57,7 @@ Um layout responsivo é aquele que se adapta automaticamente aos diversos tamanh
 ## Resolução de tela x Tamanho de tela
 
 **Resolução:** é a medida de definição de imagens digitais, que utiliza o **pixel** como unidade de medida.
+
 **Tamanho de tela:** tamanho físico da tela, normalmente medido em polegadas.
 
 * Pixels por polegada: PPI - __**P**ixels **P**er **I**nch__ para monitores e telas
@@ -70,7 +76,7 @@ Podemos ter um tamanho de tela com dimensões grandes porém com poucos pixels. 
 
 ## Unidades de medida responsivas
 
-**Medidas absolutas:**
+### Medidas absolutas:
 
 Essas são as mais comuns que vemos no dia a dia. São medidas que não estão referenciadas a qualquer outra unidade, ou seja, não dependem de um valor de referência.
 
@@ -80,7 +86,7 @@ __Quais são:__ pixels (px), points (pt), inches/polegadas (in), centímetro (cm
 
 * 96px = 1 in = 2,54cm = 25,4mm = 72pt = 6pc
 
-**Medidas relativas:** 
+### Medidas relativas:
 
 Essas são as que normalmente não estamos habituados. Essas medidas são calculadas tendo como base uma outra unidade de medida pré definida.
 
