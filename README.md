@@ -101,27 +101,27 @@ __Quais são:__
 
     Nesse caso: **1.2(em) * 14px = 16.8px**
 
-    ![unidade-em](./imagens/unidade-em.jpg)
+    [![unidade-em](./imagens/unidade-em.jpg)](https://codepen.io/raissamartinsmenezes/pen/BaazMzm)
 
     Entretanto, o que acontece quando se tem um elemento com valor **em** dentro de outro elemento com valor **em**?
 
-    ![unidade-em-aninhada](./imagens/unidade-em-aninhada.jpg)
+    [![unidade-em-aninhada](./imagens/unidade-em-aninhada.jpg)](https://codepen.io/raissamartinsmenezes/pen/OJJXdzQ)
 
 * rem
 
     O **REM** vem como sucessor do **EM** e ambos compartilham a mesma lógica de funcionamento, porém a forma de implementação é diferente. Enquanto o em está diretamente relacionado ao tamanho da fonte do elemento pai, o **rem** está relacionado com o tamanho da fonte do **elemento root (raiz)**.
 
-    ![unidade-rem](./imagens/unidade-rem.jpg)
+    [![unidade-rem](./imagens/unidade-rem.jpg)](https://codepen.io/raissamartinsmenezes/pen/LYYRZam)
 
 * porcentagem %
 
     Apesar de não ser uma unidade de medida, a porcentagem costuma ser bastante utilizada quando falamos de layout responsivo e fluido por conta de seu caráter adaptativo.
 
-    ![porcentagem](./imagens/porcentagem.jpg)  
+    [![porcentagem](./imagens/porcentagem.jpg)](https://codepen.io/raissamartinsmenezes/pen/abbmJvY)  
 
     A porcentagem permite que criemos elementos que sempre vão se readaptar para ocupar a quantidade especificada.
 
-    ![porcentagem-muda-tamanho](./imagens/porcentagem-muda-tamanho.jpg)  
+    [![porcentagem-muda-tamanho](./imagens/porcentagem-muda-tamanho.jpg)](https://codepen.io/raissamartinsmenezes/pen/abbmJvY)
 
     **Note que a propriedade `width:` é relativa ao elemento-ancestral mais próximo.** 
 
@@ -131,14 +131,7 @@ __Quais são:__
 
     A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px.
 
-    [![vw-vh](./imagens/vw-vh.jpg)]()
-
-    <p class="codepen" data-height="265" data-theme-id="0" data-default-tab="css,result" data-user="raissamartinsmenezes" data-slug-hash="QWWKvrV" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="vw e vh">
-    <span>See the Pen <a href="https://codepen.io/raissamartinsmenezes/pen/QWWKvrV">
-    vw e vh</a> by Raissa Martins (<a href="https://codepen.io/raissamartinsmenezes">@raissamartinsmenezes</a>)
-    on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+    [![vw-vh](./imagens/vw-vh.jpg)](https://codepen.io/raissamartinsmenezes/pen/QWWKvrV)
 
 * vw
 * vmin 
