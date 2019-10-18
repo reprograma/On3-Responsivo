@@ -16,6 +16,8 @@ Responsividade:
 
 7 [Mobile First](#mobileFirst)
 
+- [Exercício - Aula 24/10](#exercicio)
+
 --- 
 
 # Responsividade
@@ -284,8 +286,59 @@ Mobile First é um método onde o foco do desenvolvimento de projetos web está 
 
 --- 
 
+<div id='exercicio'></div>
+
 ## Exercício - Aula 24/10
 
+**Layout Desktop**
+
+![mundo-gelado-desktop](./imagens/mundo-gelado-desktop.png)
+
+**Layout Mobile**
+
+![mundo-gelado-mobile](./imagens/mundo-gelado-mobile.png)
+
+**Fontes**
+
+Fonte padrão do site: Nunito
+
+Fonte dos títulos: Varela Round
+
+_Ambas fontes estão disponíveis no Google Fonts._
+
+**Tamanho das fontes**
+
+Título principal: 105px
+
+Títulos secundários: 22px
+
+Botões e links: 13px
+
+Parágrafos: 14px
+
+**Cores:**
+
+Header menu: #a0bed0 
+
+Background: #f8f9fa 
+
+Botões e bordas azuis: #829dad 
+
+Botões hover: #36b0e0 
+
+Preto: #161616 
+
+Branco opaco: #fff (com 50% de opacidade - _opcional, pode ser o branco tradicional_)
+
+Preto opaco: #000 (com 50% de opacidade - _opcional, pode ser o preto tradicional_)
+
+Título: #fff 
+
+**Links úteis para realização do exercício :)**
+
+[Como usar as fontes do google](https://www.anicasagrande.com.br/google-fonts-o-que-e-como-funciona-e-como-usar/)
+[Metodologia BEM para nomeação de classes e uso no CSS](https://medium.com/@fnandaleite/metodologia-bem-para-css-b0d3269b4853)
+[Aplicando opacidade na cor](https://developer.mozilla.org/pt-BR/docs/Web/CSS/opacity)
 
 
 <!-- ---
