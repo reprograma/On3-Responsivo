@@ -8,11 +8,13 @@ Responsividade:
 
 3 [Unidades de medida responsivas](#unidadesMedida)
 
-4 [Breakpoints & Media Queries](#breakpointsMedia)
+4 [Imagens responsivas](#imagensResponsivas)
 
-5 [Tipos de displays](#displays)
+5 [Breakpoints & Media Queries](#breakpointsMedia)
 
-6 [Mobile First](#mobileFirst)
+6 [Tipos de displays](#displays)
+
+7 [Mobile First](#mobileFirst)
 
 --- 
 
@@ -107,11 +109,15 @@ _Quais são:_
 
     [![unidade-em-aninhada](./imagens/unidade-em-aninhada.jpg)](https://codepen.io/raissamartinsmenezes/pen/OJJXdzQ)
 
+    [Calculadora online: px para em](http://pxtoem.com/)
+
 * rem
 
-    O **REM** vem como sucessor do **EM** e ambos compartilham a mesma lógica de funcionamento, porém a forma de implementação é diferente. Enquanto o em está diretamente relacionado ao tamanho da fonte do elemento pai, o **rem** está relacionado com o tamanho da fonte do **elemento root (raiz)**.
+    O **REM** vem como sucessor do **EM** e ambos compartilham a mesma lógica de funcionamento, porém a forma de implementação é diferente. Enquanto o em está diretamente relacionado ao tamanho da fonte do elemento pai, o **rem** está relacionado com o tamanho da fonte do **elemento root (raiz)**. Embora sejam medidas tipográficas, **REM e EM** também podem ser utilizadas para outras finalidades, na atribuição de valores para margins e paddings por exemplo.  
 
     [![unidade-rem](./imagens/unidade-rem.jpg)](https://codepen.io/raissamartinsmenezes/pen/LYYRZam)
+
+    [Calculadora online: px para rem](https://daniellamb.com/experiments/px-to-rem-calc/)
 
 * porcentagem %
 
@@ -129,7 +135,9 @@ _Quais são:_
 
     Muitas técnicas de web design responsivo dependem muito de regras percentuais. Mas e se fosse preciso usar a largura ou a altura da viewport ao invés da largura do elemento-pai?Isso é exatamente o que as unidades vh e vw proporcionam.
 
-    A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px.
+    A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px. Sendo assim, **1vw = 1% of viewport width e 1vh = 1% of viewport height**.
+
+    ![grid-100](./imagens/grid-100.jpg)
 
     Vamos conferir o [exemplo 😊](./exemplos/exemplo-medidas-viewport.html)
 
@@ -138,6 +146,30 @@ _Quais são:_
     **vmax e vmin:** [UNIDADES CSS RELATIVAS: VW, VH, VMAX, VMIN (CSS3)](https://www.youtube.com/watch?v=g__c-7M9Xzk&t=94s)
 
     **ex e ch:** [UNIDADES CSS RELATIVAS: %, REM, EM, CH, EX (CSS3)](https://www.youtube.com/watch?v=etM0JBeFbf8)
+
+---
+
+<div id='imagensResponsivas'></div>
+
+## Imagens responsivas
+
+![gif-imagem-responsiva](https://www.oficinadanet.com.br/imagens/post/13652/3038367-slide-s-2-9-gifs-that-explain-responsive-design-brilliantly-02relative-units-vs-static-units-1.gif)
+
+Imagens responsivas respondem ao tamanho da tela para escalar proporcionalmente, sem ficar pixeladas ou desproporcionais.
+
+Uma técnica para conseguirmos ter imagens responsivas é a seguinte:
+
+```css
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+```
+
+Criamos uma classe que podemos aplicar a todas as imagens que estão no html que queremos que fiquem responsivas. As imagens que tiverem essa classe vão ter 100% de largura com altura sempre proporcinal a altura. O atributo max-width: 100% vai assegurar que essa imagem não estique mais do que o tamanho original dela permite.
+
+![max-width](https://www.oficinadanet.com.br/imagens/post/13652/3038367-slide-s-7-9-gifs-that-explain-responsive-design-brilliantly-07max-width-vx-no-max-width-1.gif)
 
 ---
 
