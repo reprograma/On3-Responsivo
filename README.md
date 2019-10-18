@@ -203,12 +203,36 @@ _Para saber mais:_
 
 ## Tipos de displays
 ### Flex
+
+[Guia completo de Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
+
+Vamos praticar transformando um layout feito para desktop em responsivo 📲 
+
 ### Grid
+
+[Guia completo de Grid](https://www.origamid.com/projetos/css-grid-layout-guia-completo/)
 
 ---
 
 <div id='mobileFirst'></div>
 
 ## Mobile First
+
+Mobile First é um método onde o foco do desenvolvimento de projetos web está direcionado aos dispositivos móveis. A técnica prioriza a construção da arquitetura mobile, seguida do pensamento para desktops. O conceito está cada vez mais popular no mercado da comunicação e da tecnologia.
+
+![mobile-first](./imagens/mobile-first.jpg)
+
+**Vantagens:**
+* Otimização do site para o celular
+* Os conteúdos precisam ser disponibilizados de forma mais otimizada e não há espaço para informações irrelevantes
+* Sites limpos, funcionais e visualmente agradáveis
+
+**Desvantagem:**
+* Limitação criativa do projeto
+
+---
+
+#### Referências utilizadas para a construção deste material
+
 
 
