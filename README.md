@@ -220,7 +220,7 @@ Vamos praticar transformando um layout feito para desktop em responsivo 📲
 
 Mobile First é um método onde o foco do desenvolvimento de projetos web está direcionado aos dispositivos móveis. A técnica prioriza a construção da arquitetura mobile, seguida do pensamento para desktops. O conceito está cada vez mais popular no mercado da comunicação e da tecnologia.
 
-![mobile-first](./imagens/mobile-first.jpg)
+![mobile-first](./imagens/mobile-first.jpeg)
 
 **Vantagens:**
 * Otimização do site para o celular
