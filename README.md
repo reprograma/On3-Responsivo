@@ -16,7 +16,7 @@ Responsividade:
 
 7 [Mobile First](#mobileFirst)
 
-- [Exercício - Aula 24/10](#exercicio)
+**[Exercício - Aula 24/10](#exercicio)**
 
 --- 
 
@@ -298,7 +298,7 @@ Mobile First é um método onde o foco do desenvolvimento de projetos web está 
 
 ![mundo-gelado-mobile](./imagens/mundo-gelado-mobile.png)
 
-**Fontes**
+**Fontes:**
 
 Fonte padrão do site: Nunito
 
@@ -306,7 +306,7 @@ Fonte dos títulos: Varela Round
 
 _Ambas fontes estão disponíveis no Google Fonts._
 
-**Tamanho das fontes**
+**Tamanho das fontes:**
 
 Título principal: 105px
 
@@ -337,7 +337,9 @@ Título: #fff
 **Links úteis para realização do exercício :)**
 
 [Como usar as fontes do google](https://www.anicasagrande.com.br/google-fonts-o-que-e-como-funciona-e-como-usar/)
+
 [Metodologia BEM para nomeação de classes e uso no CSS](https://medium.com/@fnandaleite/metodologia-bem-para-css-b0d3269b4853)
+
 [Aplicando opacidade na cor](https://developer.mozilla.org/pt-BR/docs/Web/CSS/opacity)
 
 
