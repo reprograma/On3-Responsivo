@@ -83,7 +83,7 @@ Essas são as mais comuns que vemos no dia a dia. São medidas que não estão r
 
 Essas medidas são fixas e não mudam de acordo com as especificações do dispositivo.
 
-__Quais são:__ pixels (px), points (pt), inches/polegadas (in), centímetro (cm), milímetro (mm) e paica (pc)
+_Quais são:_ pixels (px), points (pt), inches/polegadas (in), centímetro (cm), milímetro (mm) e paica (pc)
 
 * 96px = 1 in = 2,54cm = 25,4mm = 72pt = 6pc
 
@@ -93,7 +93,7 @@ Essas são as que normalmente não estamos habituados. Essas medidas são calcul
 
 Devido ao fato de que essas medidas serem calculadas pelo browser baseando-se em outra unidade, elas tendem a ser bastantes flexíveis. Ou seja, podemos ter resultados diferentes de acordo com o tamanho de tela. 
 
-__Quais são:__
+_Quais são:_
 
 * em
 
@@ -131,7 +131,7 @@ __Quais são:__
 
     A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px.
 
-    Vamos conferir o [exemplo](./exemplos/exemplo-medidas-viewport.html)
+    Vamos conferir o [exemplo 😊](./exemplos/exemplo-medidas-viewport.html)
 
 * Outras unidades de medida
 
@@ -139,12 +139,63 @@ __Quais são:__
 
     **ex e ch:** [UNIDADES CSS RELATIVAS: %, REM, EM, CH, EX (CSS3)](https://www.youtube.com/watch?v=etM0JBeFbf8)
 
-
 ---
 
 <div id='breakpointsMedia'></div>
 
 ## Breakpoints e Media Queries
+
+**Media queries** é uma técnica de consulta de mídia que atribui diferentes estilos CSS para cada resolução de tela detectada.
+
+As Media queries definem condições para utilização de estilos CSS. Se o dispositivo de acesso do usuário se adequar as **condições** definidas, se aplicam os estilos definidos a mesma. 
+
+Os **breakpoints** podem enfim serem aplicados graças as Media queries, pois seus valores são utilizados na sintaxe definindo a partir de qual ponto os estilos CSS serão aplicados.
+
+**Importante:** Quando formos utilizar media queries, o primeiro passo é adicionar uma metatag chamada viewport no do site. Essa tag vai passar instruções para o browser renderizar o conteúdo do site conforme o tamanho do dispositivo.
+
+```html
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+```
+
+![breakpoints-media-queries](./imagens/breakpoints-media-queries.jpg)
+
+**Sintaxe:**
+
+```css
+/* condição até 600px */
+@media (max-width: 600px) { 
+  .nome-da-classe {
+    color: #fff; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+  }
+}
+
+/* condição a partir de 900px */
+@media (min-width: 900px) { 
+  .nome-da-classe {
+    color: #fff; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+  }
+}
+
+/* condição a partir de 600px até 900px */
+@media (min-width: 600px) and (max-width: 900px) { 
+  .nome-da-classe {
+    color: #fff; /* elemento que vai ser modificado/adicionado/sobrescrito nessa resolução */
+  }
+}
+```
+
+![breakpoints-comuns](./imagens/breakpoints-comuns.jpg)
+
+Vamos analisar sua aplicação no [exemplo 😊](./exemplos/exemplo-media-queries.html)
+
+_Para saber mais:_
+
+* [Media Queries MDN](https://developer.mozilla.org/pt-BR/docs/Web/Guide/CSS/CSS_Media_queries)
+* [Mobile Test Me](http://mobiletest.me/)
 
 ---
 
