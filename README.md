@@ -26,7 +26,7 @@ Responsividade:
 
 ## Layout Responsivo 
 
-Um layout responsivo é aquele que se "adapta" automaticamente aos dispositivos no qual ele está sendo visualizado, e é parte fundamental do conceito de **design responsivo**, que nada mais é do que a possibilidade de **adaptação fluida** de um site a diversos tamanhos de tela.
+Um **layout responsivo** é aquele que se "adapta" automaticamente aos dispositivos no qual ele está sendo visualizado, e é parte fundamental do conceito de **design responsivo**, que nada mais é do que a possibilidade de **adaptação fluida** de um site a diversos tamanhos de tela.
 
 ![gif-responsivo](https://media.giphy.com/media/b2CD0Qrq2ulwY/giphy.gif)
 
