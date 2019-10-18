@@ -24,11 +24,12 @@ Responsividade:
 
 ## Layout Responsivo 
 
-Um layout responsivo é aquele que se adapta automaticamente aos diversos tamanhos de telas dos dispositivos no qual ele está sendo visualizado e é parte fundamento do conceito de **design responsivo**, que nada mais é do que a possibilidade de adaptação fluida de um site a diversos tamanhos de tela.
+Um layout responsivo é aquele que se "adapta" automaticamente aos dispositivos no qual ele está sendo visualizado, e é parte fundamental do conceito de **design responsivo**, que nada mais é do que a possibilidade de **adaptação fluida** de um site a diversos tamanhos de tela.
 
 ![gif-responsivo](https://media.giphy.com/media/b2CD0Qrq2ulwY/giphy.gif)
 
 **Tipos de dispositivos:**
+
 * Notebooks
 * Tablets
 * Celulares
@@ -38,16 +39,25 @@ Um layout responsivo é aquele que se adapta automaticamente aos diversos tamanh
 ![many-devices](./imagens/many-devices.jpg)
 
 **Alguns fundamentos para a construção de um layout responsivo são:**
+
 * Redimensionar imagens automaticamente
 * Simplificar e/ou ocultar elementos
 * Adaptar o tamanho de botões e links para interfaces touch
 
+**Responsivo vs adaptativo:**
+
+O design responsivo expande de forma fluída, enquanto o adaptativo aguarda a tela terminar a expansão.
+
+![responsivo-adaptativo](https://www.oficinadanet.com.br/imagens/post/13652/3038367-slide-s-1-9-gifs-that-explain-responsive-design-brilliantly-01responsive-vs-adaptive.gif)
+
 **Vantagens:**
+
 * Usabilidade (design adaptado para diversos formatos)
 * Manuntenção (não precisa desenvolver outras versões)
 * SEO Google (tudo em uma url só)
 
 **Desvantagens:**
+
 * Desenvolvimento apenas para os principais dispositivos do mercado
 * Versões antigas de navegadores que não reconhecem a linguagem de adapatação
 * Necessidade de uma pré construção da arquitetura do código e do layout
@@ -63,15 +73,15 @@ Um layout responsivo é aquele que se adapta automaticamente aos diversos tamanh
 
 **Tamanho de tela:** tamanho físico da tela, normalmente medido em polegadas.
 
-* Pixels por polegada: PPI - __**P**ixels **P**er **I**nch__ para monitores e telas
+* Pixels por polegada: PPI - _**P**ixels **P**er **I**nch_ para monitores e telas
+
+É fundamental termos em mente que **a resolução é determinada pelo tamanho da tela (expresso pela sua altura e largura) mais a quantidade de pixels nela inserida.**
 
 ![comparativa-resolucao](./imagens/comparativa-resolucao.jpg)
 
-É fundamental termos em mente que a resolução é determinada pelo tamanho da tela (expresso pela sua altura e largura) mais a quantidade de pixels nela inserida.
+Dessa forma, olhando simplesmente para o tamanho (largura x altura) **não podemos afirmar que esse possui alta ou baixa resolução. A quantidade de pixels contidas nele, é que dirá se o mesmo possui alta ou baixa resolução.**
 
-Dessa forma, olhando simplesmente para o tamanho (largura x altura) não podemos afirmar que esse possui alta ou baixa resolução. A quantidade de pixels contidas nele, é que dirá se o mesmo possui alta ou baixa resolução.
-
-Podemos ter um tamanho de tela com dimensões grandes porém com poucos pixels. O inverso também é possível, um tamanho com dimensões pequenas porém com muitos pixels. Assim, dispositivos que possuem o mesmo tamanho nem sempre possuem uma mesma resolução. 
+Podemos ter um tamanho de tela com dimensões grandes porém com poucos pixels. O inverso também é possível, um tamanho com dimensões pequenas porém com muitos pixels. Assim, **dispositivos que possuem o mesmo tamanho nem sempre possuem uma mesma resolução.** 
 
 ---
 
@@ -79,13 +89,15 @@ Podemos ter um tamanho de tela com dimensões grandes porém com poucos pixels. 
 
 ## Unidades de medida responsivas
 
+![gif-medidas](https://www.oficinadanet.com.br/imagens/post/13652/3038367-slide-s-2-9-gifs-that-explain-responsive-design-brilliantly-02relative-units-vs-static-units-1.gif)
+
 ### Medidas absolutas:
 
 Essas são as mais comuns que vemos no dia a dia. São medidas que não estão referenciadas a qualquer outra unidade, ou seja, não dependem de um valor de referência.
 
-Essas medidas são fixas e não mudam de acordo com as especificações do dispositivo.
+Essas medidas são **estáticas** não mudam de acordo com as especificações do dispositivo.
 
-_Quais são:_ pixels (px), points (pt), inches/polegadas (in), centímetro (cm), milímetro (mm) e paica (pc)
+_Quais são:_ **pixels (px)**, points (pt), inches/polegadas (in), centímetro (cm), milímetro (mm) e paica (pc)
 
 * 96px = 1 in = 2,54cm = 25,4mm = 72pt = 6pc
 
@@ -93,13 +105,13 @@ _Quais são:_ pixels (px), points (pt), inches/polegadas (in), centímetro (cm),
 
 Essas são as que normalmente não estamos habituados. Essas medidas são calculadas tendo como base uma outra unidade de medida pré definida.
 
-Devido ao fato de que essas medidas serem calculadas pelo browser baseando-se em outra unidade, elas tendem a ser bastantes flexíveis. Ou seja, podemos ter resultados diferentes de acordo com o tamanho de tela. 
+Devido ao fato de que essas medidas serem calculadas pelo browser baseando-se em outra unidade, elas tendem a ser bastantes **flexíveis**. Ou seja, podemos ter resultados diferentes de acordo com o tamanho de tela. 
 
 _Quais são:_
 
 * em
 
-    **EM** é uma unidade de medida tipográfica. Para entender sua aplicação, vamos utilizar o exemplo abaixo onde foi definido um tamanho de fonte no elemento `<div>`, o valor de **em** declarado em qualquer elemento-filho dentro de `<div>` será igual a: **o valor declarado no elemento-filho * o valor declarado no elemento pai**. 
+    **EM** é uma unidade de **medida tipográfica**. Para entender sua aplicação, vamos utilizar o exemplo abaixo onde foi definido um tamanho de fonte no elemento `<div>`, o valor de **em** declarado em qualquer elemento-filho dentro de `<div>` será igual a: **o valor declarado no elemento-filho * o valor declarado no elemento pai**. 
 
     Nesse caso: **1.2(em) * 14px = 16.8px**
 
@@ -133,9 +145,9 @@ _Quais são:_
 
 * vh e vw
 
-    Muitas técnicas de web design responsivo dependem muito de regras percentuais. Mas e se fosse preciso usar a largura ou a altura da viewport ao invés da largura do elemento-pai?Isso é exatamente o que as unidades vh e vw proporcionam.
+    Muitas técnicas de web design responsivo dependem muito de regras percentuais. **Mas e se fosse preciso usar a largura ou a altura da viewport ao invés da largura do elemento-pai?** Isso é exatamente o que as unidades vh e vw proporcionam.
 
-    A medida vh é igual a 1/100 da altura da viewport. Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px. Sendo assim, **1vw = 1% of viewport width e 1vh = 1% of viewport height**.
+    A medida vh é igual a **1/100** da altura da viewport. Então, por exemplo, se a altura do navegador é 900px, 1vh equivale a 9px e, analogamente, se a largura da viewport é 750px, 1vw equivale a 7.5px. Sendo assim, **1vw = 1% da largura da viewport e 1vh = 1% da altura da viewport**.
 
     ![grid-100](./imagens/grid-100.jpg)
 
@@ -153,21 +165,21 @@ _Quais são:_
 
 ## Imagens responsivas
 
-![gif-imagem-responsiva](https://www.oficinadanet.com.br/imagens/post/13652/3038367-slide-s-2-9-gifs-that-explain-responsive-design-brilliantly-02relative-units-vs-static-units-1.gif)
-
 Imagens responsivas respondem ao tamanho da tela para escalar proporcionalmente, sem ficar pixeladas ou desproporcionais.
+
+![imagem-maior](./imagens/imagem-maior.jpg)
 
 Uma técnica para conseguirmos ter imagens responsivas é a seguinte:
 
 ```css
-.img-responsive {
+.img-responsiva {
   width: 100%;
   max-width: 100%;
   height: auto;
 }
 ```
 
-Criamos uma classe que podemos aplicar a todas as imagens que estão no html que queremos que fiquem responsivas. As imagens que tiverem essa classe vão ter 100% de largura com altura sempre proporcinal a altura. O atributo max-width: 100% vai assegurar que essa imagem não estique mais do que o tamanho original dela permite.
+Criamos uma classe que podemos aplicar a todas as imagens que estão no html que queremos que fiquem responsivas. As imagens que tiverem essa classe vão ter 100% de largura com altura sempre proporcinal a altura. O atributo `max-width: 100%` vai assegurar que essa imagem não estique mais do que o tamanho original dela permite.
 
 ![max-width](https://www.oficinadanet.com.br/imagens/post/13652/3038367-slide-s-7-9-gifs-that-explain-responsive-design-brilliantly-07max-width-vx-no-max-width-1.gif)
 
@@ -179,9 +191,11 @@ Criamos uma classe que podemos aplicar a todas as imagens que estão no html que
 
 **Media queries** é uma técnica de consulta de mídia que atribui diferentes estilos CSS para cada resolução de tela detectada.
 
-As Media queries definem condições para utilização de estilos CSS. Se o dispositivo de acesso do usuário se adequar as **condições** definidas, se aplicam os estilos definidos a mesma. 
+As media queries definem condições para utilização de estilos CSS. Se o dispositivo de acesso do usuário se adequar as **condições** definidas, se aplicam os estilos definidos nos elementos. 
 
-Os **breakpoints** podem enfim serem aplicados graças as Media queries, pois seus valores são utilizados na sintaxe definindo a partir de qual ponto os estilos CSS serão aplicados.
+Os **breakpoints** podem enfim serem aplicados graças as media queries, pois seus valores são utilizados na sintaxe definindo a partir de qual ponto os estilos CSS serão aplicados.
+
+![gif-breakpoints](https://www.oficinadanet.com.br/imagens/post/13652/3038367-slide-s-3-9-gifs-that-explain-responsive-design-brilliantly-03with-breakpoints-vs-without-breakpoints-1.gif)
 
 **Importante:** Quando formos utilizar media queries, o primeiro passo é adicionar uma metatag chamada viewport no do site. Essa tag vai passar instruções para o browser renderizar o conteúdo do site conforme o tamanho do dispositivo.
 
@@ -236,6 +250,8 @@ _Para saber mais:_
 ## Tipos de displays
 ### Flex
 
+Vamos entender como o flex funciona [aqui!](https://codepen.io/raissamartinsmenezes/pen/XWWNbrP)
+
 [Guia completo de Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
 
 Vamos praticar transformando um layout feito para desktop em responsivo 📲 
@@ -250,21 +266,37 @@ Vamos praticar transformando um layout feito para desktop em responsivo 📲
 
 ## Mobile First
 
+![gif-mobile-first](https://www.oficinadanet.com.br/imagens/post/13652/3038367-slide-s-8-9-gifs-that-explain-responsive-design-brilliantly-08desktop-first-vs-mobile-first-3.gif)
+
 Mobile First é um método onde o foco do desenvolvimento de projetos web está direcionado aos dispositivos móveis. A técnica prioriza a construção da arquitetura mobile, seguida do pensamento para desktops. O conceito está cada vez mais popular no mercado da comunicação e da tecnologia.
 
 ![mobile-first](./imagens/mobile-first.jpeg)
 
 **Vantagens:**
+
 * Otimização do site para o celular
 * Os conteúdos precisam ser disponibilizados de forma mais otimizada e não há espaço para informações irrelevantes
 * Sites limpos, funcionais e visualmente agradáveis
 
 **Desvantagem:**
+
 * Limitação criativa do projeto
 
----
+--- 
+
+## Exercício - Aula 24/10
+
+
+
+<!-- ---
 
 #### Referências utilizadas para a construção deste material
+
+* [Repositório - T7 {reprograma}](https://github.com/reprograma/Git-Github-e-Responsivo/tree/master/Responsivo#aula-1)
+* [Devmedia - Utilizando media queries](https://www.devmedia.com.br/utilizando-css-media-queries/27085)
+* [Desenvolvimento para a web - Unidades de medida](https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/) -->
+
+
 
 
 
